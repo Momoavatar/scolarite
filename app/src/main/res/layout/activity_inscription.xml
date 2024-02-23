@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="teal_200">
 
 
         <TextView
@@ -19,66 +20,93 @@
             android:text="Inscription"
             android:gravity="center"
             android:textStyle="bold"
+            android:textSize="35dp"
             android:background="@color/purple_700"
             android:textColor="@color/white"/>
 
         <Button
+            android:id="@+id/Retourbt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
             android:text="Retour"
-            android:id="@+id/Retourbt"
-            android:layout_marginTop="15dp"/>
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matricule"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Matriculetxt"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nom"
-            android:textSize="14dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/comptetxt"/>
+            android:id="@+id/nomtxt"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Prenom"
-            android:textSize="14dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/comptetxt"/>
+            android:id="@+id/prenomtxt"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adresse"
-            android:textSize="14dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/comptetxt"/>
+            android:id="@+id/adrtxt"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Telephone"
-            android:textSize="14dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/comptetxt"/>
+            android:id="@+id/teltxt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="frais"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fraistxt"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="S'inscrire"
             android:id="@+id/inscrirebt"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="17dp"
+            android:textSize="20dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
